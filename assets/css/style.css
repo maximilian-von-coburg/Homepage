@@ -59,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ----------------------------------------------------------------- */
 
 /* VARIABLES */
+
 :root {
     /* Colors */
     --color-base-dark: hsla(240, 76%, 10%, 100%);
@@ -70,5 +71,68 @@ h1, h2, h3, h4, h5, h6 {
 
     /* Typography */
     --anchor-font: "Exo 2", sans-serif;
-    --secondary-font: "Manrope". sans-serif;
+    --secondary-font: "Manrope", sans-serif;
+}
+
+/* GLOBAL STYLES */
+
+h1 {
+    font-family: var(--anchor-font);
+    font-size: 4.5rem;
+    font-weight: 300;
+    color: var(--color-base-bright);
+}
+
+h2 {
+    font-family: var(--anchor-font);
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--color-base-bright);
+}
+
+h3 {
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-base-bright);
+}
+
+h4 {
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-base-bright);
+}
+
+h5 {
+    font-family: var(--secondary-font);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-base-bright);
+}
+
+h6 {
+    font-family: var(--secondary-font);
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-base-bright);
+}
+
+p {
+    font-family: var(--anchor-font);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-base-bright);
+}
+
+a, button {
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    color: var(--color-base-bright);
+}
+
+body {
+    background-color: var(--color-base-dark);
 }
