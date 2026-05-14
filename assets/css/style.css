@@ -58,3 +58,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ----------------------------------------------------------------- */
 
+/* VARIABLES */
+:root {
+    /* Colors */
+    --color-base-dark: hsla(240, 76%, 10%, 100%);
+    --color-base-middle: hsla(0, 0%, 75%, 100%);
+    --color-base-bright: hsla(0, 0%, 100%, 100%);
+    --accent-gradient: linear-gradient(hsla(180, 96%, 56%, 100%), hsla(193, 99%, 35%, 100%));
+    --accent-bright: hsla(180, 96%, 56%, 100%);
+    --accent-dark: hsla(187, 100%, 45%, 100%);
+
+    /* Typography */
+    --anchor-font: "Exo 2", sans-serif;
+    --secondary-font: "Manrope". sans-serif;
+}
