@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
     --color-base-dark: hsla(240, 76%, 10%, 100%);
     --color-base-middle: hsla(0, 0%, 75%, 100%);
     --color-base-bright: hsla(0, 0%, 100%, 100%);
-    --accent-gradient: linear-gradient(hsla(180, 96%, 56%, 100%), hsla(193, 99%, 35%, 100%));
+    --accent-gradient: linear-gradient(90deg, hsla(180, 96%, 56%, 100%), hsla(193, 99%, 35%, 100%));
     --accent-bright: hsla(180, 96%, 56%, 100%);
     --accent-dark: hsla(187, 100%, 45%, 100%);
 
@@ -75,6 +75,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* GLOBAL STYLES */
+
+/* Typography */
 
 h1 {
     font-family: var(--anchor-font);
@@ -131,8 +133,126 @@ a, button {
     font-weight: 500;
     letter-spacing: 0.05rem;
     color: var(--color-base-bright);
+    cursor: pointer;
 }
 
 body {
     background-color: var(--color-base-dark);
+}
+
+/* Buttons */
+
+.button-primary {
+  position: relative;
+  overflow: hidden;
+  border: none;
+
+  padding: 0.5rem 2.5rem;
+  border-radius: 1rem;
+  background: var(--accent-gradient);
+
+  transition: all 0.75s ease;
+}
+
+.button-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+
+  padding: 0.125rem;
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 100%), hsla(0, 0%, 100%, 25%), hsla(0, 0%, 100%, 0%));
+  background-size: 100% 100%;
+
+  transition: background-size 0.75s ease;
+
+  -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+  mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.button-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-0.1rem);
+}
+
+.button-primary:hover::before {
+  background-size: 500% 500%;
+}
+
+.button-primary:active {
+  transition: all 0.05s;
+
+  filter: brightness(0.9);
+}
+
+.button-secondary {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+
+  padding: 0.5rem 2.5rem;
+  border-radius: 1rem;
+
+  transition: all 0.75s ease;
+}
+
+.button-secondary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+
+  padding: 0.125rem;
+  background: var(--accent-gradient);
+
+  transition: background-size 0.75s ease;
+
+  -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+  mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.button-secondary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+
+  background: var(--accent-gradient);
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.75s ease;
+
+  z-index: -1;
+}
+
+.button-secondary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-0.1rem);
+}
+
+.button-secondary:hover:after {
+  transform: scaleX(1);
+}
+
+.button-secondary:active {
+  transition: all 0.05s;
+
+  filter: brightness(0.9);
 }
