@@ -127,7 +127,30 @@ p {
     color: var(--color-base-bright);
 }
 
-a, button {
+a {
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  color: var(--color-base-bright);
+  cursor: pointer;
+
+  display: inline-block;
+  transition: all 0.75s ease;
+}
+
+a:hover {
+  color: var(--accent-bright);
+  transform: translateY(-0.1rem);
+}
+
+a:active {
+  transition: all 0.05s;
+
+  filter: brightness(0.9);
+}
+
+button {
     font-family: var(--secondary-font);
     font-size: 1rem;
     font-weight: 500;
@@ -316,6 +339,8 @@ body {
 
   -webkit-mask-composite: xor;
   mask-composite: exclude;
+
+  pointer-events: none;
 }
 
 /* HEADER */
