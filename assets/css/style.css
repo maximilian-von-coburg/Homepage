@@ -360,30 +360,38 @@ header {
   backdrop-filter: blur(12px);
 
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
-  gap: 10rem;
 }
 
 nav {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
   align-items: center;
-  gap: 2rem;
+  justify-content: flex-end;
+  min-height: 2.5rem;
+  min-width: 18rem;
+  width: min(50%, 55rem);
+  max-width: 60%;
+  flex: 0 1 auto;
 }
 
 .navbar {
   list-style: none;
 
+  width: 100%;
+
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .menu-toggle {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
 
   display: none;
 }
