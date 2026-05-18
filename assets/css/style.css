@@ -83,6 +83,8 @@ h1 {
     font-size: 4.5rem;
     font-weight: 300;
     color: var(--color-base-bright);
+
+    line-height: 1.1;
 }
 
 h2 {
@@ -401,6 +403,42 @@ nav {
 section {
   width: 100%;
   padding: 6rem 2rem;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+}
+
+.hero-content {
+  flex: 1;
+
+  text-align: right;
+}
+
+.hero-headlines {
+  margin-bottom: 6rem;
+}
+
+.hero-headlines h1 {
+  margin-bottom: 2rem;
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.hero-design {
+  background-color: #000;
+
+  min-width: 300px;
+  min-height: 300px;
+
+  flex: 1;
+  max-width: 45%;
 }
 
 /* FOOTER */
