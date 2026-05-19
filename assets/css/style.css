@@ -519,11 +519,17 @@ section {
 }
 
 .hero-item {
-  border: 8px solid #fff;
-  border-radius: 50%;
-
   width: 100%;
   aspect-ratio: 1 / 1;
+
+  margin-top: 1rem;
+}
+
+.hero-item svg {
+  height: 100%;
+  width: auto;
+
+  color: var(--accent-bright);
 }
 
 .column-1 {
