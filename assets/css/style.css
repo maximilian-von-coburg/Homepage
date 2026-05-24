@@ -358,7 +358,7 @@ body {
   position: relative;
   overflow: visible;
 
-  max-width: 120rem;
+  max-width: 90rem;
   margin: auto;
 
   border-radius: 2rem;
@@ -466,9 +466,9 @@ section {
 /* Hero */
 
 .hero {
-  border-bottom: 1px solid red;
+  height: 90svh;
+  max-height: 50rem;
 
-  height: 90dvh;
   padding-bottom: 1rem;
 }
 
@@ -510,7 +510,8 @@ section {
   margin-left: 6%;
   
   width: 40%;
-  height: 100lvh;
+  height: 100svh;
+  max-height: 55rem;
 
   max-width: 35rem;
 
