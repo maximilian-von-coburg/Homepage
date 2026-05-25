@@ -795,7 +795,7 @@ section {
 
   border-radius: 2rem;
 
-  overflow: hidden;
+  /* overflow: hidden; */
 
   width: 100%;
   aspect-ratio: 16/9;
@@ -835,19 +835,42 @@ section {
 }
 
 .bg-slide {
-  opacity: 0;
-
   position: absolute;
   inset: 0;
 
   z-index: -1;
 
-  background-image: url(../images/website-erstellen-quer.png);
   background-size: cover;
 }
 
-.active {
+.service-1 {
+  background-image: url(../images/services/website-erstellen-quer.png);
+
+  transform: translateX(0);
+}
+
+.service-2 {
+  background-image: url(../images/services/website-ueberarbeiten-quer.png);
+
+  transform: translateX(100%);
+}
+
+.service-3 {
+  background: red;
+
+  transform: translateX(200%);
+}
+
+.service-4 {
+  background: green;
+
+  transform: translateX(300%);
+}
+
+.active-slide {
   opacity: 0.75;
+
+  transform: translateX(0);
 }
 
 .bg-overlay {
@@ -871,6 +894,12 @@ section {
   width: 30rem;
 }
 
+.services-title {
+  line-height: 1;
+
+  margin-bottom: 1rem;
+}
+
 .services-buttons {
   width: 10rem;
   padding: 1rem;
@@ -878,6 +907,27 @@ section {
   display: flex;
   justify-content: space-between;
 }
+
+.services-buttons button {
+  border: none;
+  background: none;
+
+  padding: 0 0.5rem;
+
+  opacity: 0.5;
+
+  transition: opacity 0.2s ease;
+}
+
+.services-buttons button:hover {
+  opacity: 1;
+}
+
+.current-service {
+  opacity: 1 !important;
+
+  transform: scale(1.3);
+}  
 
 /* FOOTER */
 
