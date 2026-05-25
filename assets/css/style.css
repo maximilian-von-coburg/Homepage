@@ -123,10 +123,17 @@ h6 {
 }
 
 p {
-    font-family: var(--anchor-font);
+    font-family: var(--secondary-font);
     font-size: 1rem;
     font-weight: 400;
     color: var(--color-base-bright);
+}
+
+span {
+  font-family: var(--secondary-font);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-base-bright);
 }
 
 a {
@@ -454,6 +461,8 @@ body {
 
 .body-container {
   max-width: 90rem;
+
+  margin: auto;
 }
 
 /* HEADER */
@@ -507,7 +516,9 @@ nav {
 
 section {
   width: 100%;
-  padding: 4rem;
+  padding: 4rem 5%;
+
+  margin-bottom: 6rem;
 }
 
 /* Hero */
@@ -516,11 +527,12 @@ section {
   height: 90svh;
   max-height: 50rem;
 
-  padding-bottom: 1rem;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
 }
 
 .hero-content {
-  max-width: 55%;
+  max-width: 60%;
   height: 100%;
 
   margin-left: auto;
@@ -528,7 +540,7 @@ section {
   display: flex;
   flex-direction: column;
 
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .hero-headlines {
@@ -536,12 +548,10 @@ section {
 }
 
 .hero-headlines h1 {
-  font-size: clamp(2rem, 5.5dvw, 4.5rem);
-}
+  font-size: clamp(2rem, 4.5dvw, 4.5rem);
+  line-height: 1.1;
 
-.headline-break {
-  display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .hero-cta {
@@ -554,9 +564,9 @@ section {
   position: fixed;
   top: -10dvh;
   left: 0;
-  margin-left: 6%;
+  margin-left: 5%;
   
-  width: 40%;
+  width: 33%;
   height: 100svh;
   max-height: 55rem;
 
