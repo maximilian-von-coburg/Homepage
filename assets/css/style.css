@@ -962,6 +962,53 @@ section {
   font-style: italic;
 }
 
+/* About */
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: clamp(2rem, 6vw, 8rem);
+
+  border-left: 1rem solid hsla(0, 0%, 100%, 1);
+  width: 95%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: 5%
+}
+
+.about-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.about-text {
+  margin-bottom: 4rem;
+}
+
+.about-text p {
+  text-align: justify;
+  hyphens: auto;
+  text-align-last: left;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+}
+
+.portrait {
+    width: clamp(260px, 28vw, 420px);
+    height: auto;
+
+    border-radius: 2rem;
+
+    flex-shrink: 0;
+
+    box-shadow: 
+      0 4px 8px hsla(0, 0%, 0%, 0.15),
+      0 12px 32px hsla(0, 0%, 0%, 0.25),
+      inset 0 1px hsla(0, 0%, 100%, 0.1);
+}
+
 /* FOOTER */
 
 footer {
