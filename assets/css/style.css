@@ -175,6 +175,21 @@ ul, ol, li {
   color: var(--color-base-bright);
 }
 
+label {
+  font-family: var(--secondary-font);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-base-bright);
+}
+
+input, textarea {
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  color: var(--color-base-bright);
+}
+
 /* Buttons */
 
 .button-primary {
@@ -1007,6 +1022,70 @@ section {
       0 4px 8px hsla(0, 0%, 0%, 0.15),
       0 12px 32px hsla(0, 0%, 0%, 0.25),
       inset 0 1px hsla(0, 0%, 100%, 0.1);
+}
+
+/* Contact */
+
+.contact-headlines {
+  margin-bottom: 2rem;
+}
+
+.form-inputs {
+  display: grid;
+
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: repeat(3, 3rem);
+
+  grid-template-areas: 
+    "name message"
+    "email message"
+    "subject message";
+
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+}
+
+.form-name {
+  grid-area: "name";
+}
+
+.form-email {
+  grid-area: "email";
+}
+
+.form-subject {
+  grid-area: "subject";
+}
+
+.form-message {
+  grid-area: message;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field input, .input-field textarea {
+  flex: 1;
+}
+
+label {
+  display: block;
+}
+
+input, textarea {
+  border: 1px solid var(--accent-bright);
+  border-radius: 0.5rem;
+
+  background: transparent;
+
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  outline: 1.5px solid var(--accent-bright);
 }
 
 /* FOOTER */

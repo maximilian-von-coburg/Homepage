@@ -300,16 +300,40 @@
             </section>
 
             <section id="contact">
-                <div>
-                    <div class="headlines">
-                        <h2>Kontakt</h2>
-                        <p>
-                            Kontaktieren Sie mich bei Fragen oder für ein unverbindliches Erstgespräch.
-                        </p>
-                    </div>
-
-                    <div class="form"></div>
+                <div class="contact-headlines">
+                    <h2>Kontakt</h2>
+                    <p>
+                        Kontaktieren Sie mich bei Fragen oder für ein unverbindliches Erstgespräch.
+                    </p>
                 </div>
+
+                <form>
+                    <div class="form-inputs">
+                        <div class="form-name input-field">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+
+                        <div class="form-email input-field">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="form-subject input-field">
+                            <label for="subject">Betreff:</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+
+                        <div class="form-message input-field">
+                            <label for="message">Nachricht:</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <button class="button-primary" type="submit">Absenden</button>
+                    </div>
+                </form>
             </section>
         </main>
 
