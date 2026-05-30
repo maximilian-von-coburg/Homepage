@@ -1092,5 +1092,23 @@ input:focus, textarea:focus {
 
 footer {
   width: 100%;
-  padding: 6rem 2rem 2rem;
+  padding: 4rem 2rem;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info h2 {
+  font-size: clamp(1.5rem, 2dvw, 2rem);
+}
+
+.footer-info h3 {
+  font-size: clamp(1rem, 1.5dvw, 1.5rem);
+  font-weight: 500;
+}
+
+.footer-nav ul, .footer-legal ul {
+  list-style: none;
 }
