@@ -900,11 +900,11 @@ section {
 }
 
 .service-3 {
-  background: red;
+  background-image: url(../images/services/branding.png);
 }
 
 .service-4 {
-  background: green;
+  background-image: url(../images/services/wartung.png);
 }
 
 .bg-overlay {
