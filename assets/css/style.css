@@ -76,6 +76,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* GLOBAL STYLES */
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Typography */
 
 h1 {
@@ -142,7 +146,9 @@ a {
   font-weight: 500;
   letter-spacing: 0.05rem;
   color: var(--color-base-bright);
+
   cursor: pointer;
+  text-decoration: none;
 
   display: inline-block;
   transition: all 0.75s ease;
@@ -165,6 +171,7 @@ button {
     font-weight: 500;
     letter-spacing: 0.05rem;
     color: var(--color-base-bright);
+
     cursor: pointer;
 }
 
@@ -230,6 +237,8 @@ input, textarea {
 .button-primary:hover {
   filter: brightness(1.1);
   transform: translateY(-0.1rem);
+
+  color: var(--color-base-bright);
 }
 
 .button-primary:hover::before {
@@ -295,6 +304,8 @@ input, textarea {
 .button-secondary:hover {
   filter: brightness(1.1);
   transform: translateY(-0.1rem);
+
+  color: var(--color-base-bright);
 }
 
 .button-secondary:hover:after {
