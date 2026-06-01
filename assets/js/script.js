@@ -18,13 +18,13 @@ const servicesContent = [
     },
 
     {
-        title: "Slide 3",
-        info: "this is the infotext for slide 3. this is the infotext for slide 3. this is the infotext for slide 3. this is the infotext for slide 3."
+        title: "Branding",
+        info: "Sie wollen sich nicht selbst um Farbenkombinationen, ein Logo und andere Designaufgaben für Ihr Unternehmen kümmern? Ich kann Ihnen die Gestaltung dieser Dinge abnehmen."
     },
 
     {
-        title: "Slide 4",
-        info: "this is the infotext for slide 4. this is the infotext for slide 4. this is the infotext for slide 4. this is the infotext for slide 4."
+        title: "Wartung & Betreuung",
+        info: "Sie wollen zwar eine individuell entwickelte Website, brauchen aber jemanden, der sich um die Seite kümmert? Ich übernehme die Wartung der Website und betreue Sie bei Fragen und Änderungen."
     }
 ];
 

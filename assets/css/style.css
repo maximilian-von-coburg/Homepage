@@ -892,19 +892,19 @@ section {
 }
 
 .service-1 {
-  background-image: url(../images/services/website-erstellen-quer.png);
+  background-image: url(../images/services/website-erstellen.png);
 }
 
 .service-2 {
-  background-image: url(../images/services/website-ueberarbeiten-quer.png);
+  background-image: url(../images/services/website-ueberarbeiten.png);
 }
 
 .service-3 {
-  background: red;
+  background-image: url(../images/services/branding.png);
 }
 
 .service-4 {
-  background: green;
+  background-image: url(../images/services/wartung.png);
 }
 
 .bg-overlay {
